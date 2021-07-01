@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>My Family</title>    
+</head>
+<body>
+ <center>
+    <h1>My Family</h1>    
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Family_Portrait.jpg"style="width:30%" id="family_member_image">
+<h1 id="family_member_name"></h1>
+<button onclick="update();">Next</button>
+<script>
+var images=["https://upload.wikimedia.org/wikipedia/commons/d/df/Family_Portrait.jpg",
+"https://www.parentingideas.com.au/wp-content/uploads/2017/08/Boy.jpg",
+"https://i2.wp.com/sleepingshouldbeeasy.com/wp-content/uploads/2015/11/enjoy-motherhood-2.jpg",
+"https://image.freepik.com/free-vector/happy-father-s-day_24908-59789.jpg"   ];
+ var names=[ "Family Book" , "Ayush Dasgupta" , "Ipsita Dasgupta" , "Abhijit Dasgupta"];
+var i=0;
+function update()
+{
+i++;
+var number_of_family_member_in_array= 3
+if(i > number_of_family_member_in_array)
+{ 
+     i=0;
+
+}
+var updatedimages = images[i];
+var updatedname = names[i];
+document.getElementById("family_member_image").src=updatedimages;
+document.getElementById("family_member_name").innerHTML=updatedname;
+
+}
+
+
+</script>
+
+
+
+</center>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
